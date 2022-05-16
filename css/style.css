@@ -283,7 +283,7 @@ header {
     cursor: pointer;
     border: 0;
     position: absolute;
-    left: 215px; top: 175px;
+    left: 215px; top: 0px;
     right: 215px; bottom: 60px;
     width: 143px;
     height: 48px;
