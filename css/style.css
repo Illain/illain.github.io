@@ -282,11 +282,11 @@ header {
     color: #ffff;
     cursor: pointer;
     border: 0;
-    position: absolute;
+/*     position: absolute;
     left: 215px; top: 0px;
     right: 215px; bottom: 60px;
     width: 143px;
-    height: 48px;
+    height: 48px; */
 }
 
 .modal-descr{
