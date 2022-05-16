@@ -35,9 +35,7 @@
                         Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!
                     </p>
 
-                    <button class="gus_launch">
-                        Запустити гуся
-                    </button>
+                    <button class="gus_launch" id="open-form-modal-btn">Запустити гуся</button>
 
                 </div>
             <img src="./img/gus.svg" alt="gus" class="gus_image">
@@ -47,7 +45,7 @@
 
     <section class="bgus_facts" alt="ukr logo" class="ukr_logo">
 
-        <img src="./img/trezub.svg" alt="Trezub" class="trezub">
+        <img src="D:\Git\gus\img\trezub.svg" alt="Trezub" class="trezub">
 
         <h4 class="bgus_title">Цікаві факти про бандерогусей</h4>
         <h5 class="bgus_descr">Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами</h5>
@@ -81,45 +79,49 @@
         </div>
     </footer>
 
-    <div class="modal_bgs">
+    <div class="modal_bgs" id="form-modal">
 
-        <form action="#" class="modal_form">
-            <button class="close_btn">x</button>
-            <img src="./img/trezub.svg" alt="ukr logo">
+        <div class="modal-form-container">
+            <button class="close-btn">x</button>
+            <form action="#" class="modal-form" data-netlify="true">
+                
+                <img src="./img/trezub.svg" alt="ukr logo">
 
-            <h4 class="modal_form_title">Поділися, будь ласка, поштою</h4>
-            <p class="modal_form_descr">та запиши гуся до бандерозагону</p>
+                <h4 class="modal_form_title">Поділися, будь ласка, поштою</h4>
+                <p class="modal_form_descr">та запиши гуся до бандерозагону</p>
 
-            <div class="modal_form_field">
-                <label for="user_name" class="modal_field_name">Ім’я</label>
-                <input type="text" class="modal_field_input" id="user_name">
-            </div>
-            <div class="modal_form_field">
-                <label for="user_email" class="modal_field_name">Email</label>
-                <input type="email" class="modal_field_input" id="user_email">
-            </div>
+                <div class="modal_form_field">
+                    <label for="user_name" class="modal_field_name">Ім’я</label>
+                    <input type="text" class="modal_field_input" id="user_name" name="Ім’я">
+                </div>
+                <div class="modal_form_field">
+                    <label for="user_email" class="modal_field_name">Email</label>
+                    <input type="email" class="modal_field_input" id="user_email" name="Email">
+                </div>
 
-            <button class="modal_form_btn">Запустити гуся</button>
-         </form>
-        
-
-    </div>
-
-    <div class="modal_bgs">
-
-        <div class="modal_form">
-            <img src="./img/trezub.svg" alt="ukr logo">
-
-            <h4 class="modal_form_title">Гуси вилетіли</h4>
-            <p class="modal_form_descr">Найблищим часом координати будуть передані на вашу скриньку</p>
-
-            
-
-            <button class="modal_form_btn_exit">Це є файно</button>
+                <button class="modal_form_btn" id="launch-btn">Запустити гуся</button>
+            </form>
         </div>
         
 
     </div>
-   
-</body>
+
+    <div class="modal_bgs" id="success-modal">
+
+        <div class="modal_form modal-form-container">
+            <img src="./img/trezub.svg" alt="ukr logo">
+
+            <h4 class="modal_form_title">Гуси вилетіли</h4>
+            <p class="modal_form_descr modal-descr">Найблищим часом координати будуть передані на вашу скриньку</p>
+
+            
+
+            <button class="modal_form_btn_exit close-btn">Це є файно</button>
+        </div>
+        
+
+    </div>
+
+    <script src="./scripts/form.js"></script>
+   </body>
 </html>
