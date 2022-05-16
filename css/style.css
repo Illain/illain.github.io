@@ -202,11 +202,11 @@ header {
 
 .modal-form-container {
     background: #fff;
-    padding: 34px 86px 50px 86px;
+    padding: 34px 86px 100px 86px;
     position: relative;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 .modal_form_title{
@@ -275,10 +275,10 @@ header {
     background: none;
 }
 
-/* .modal_form_btn_exit {
+.modal_form_btn_exit {
     background: #FF6B0A;
     border-radius: 8px;
-    /* padding: 12px 24px;
+    padding: 12px 24px; 
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -286,11 +286,10 @@ header {
     cursor: pointer;
     border: 0;
     position: absolute;
-    left: 215px; top: 0px;
+    left: 215px; top: 170px;
     right: 215px; bottom: 60px;
-    width: 143px;
-    height: 48px;
-} */
+    margin-top: 8px;
+}
 
 .modal-descr{
     margin-bottom: 0;
